@@ -128,6 +128,27 @@ git push -u origin main
 
 </details>
 
+## Module 4 Custom Regression Project
+
+This project applies linear regression to Scikit-Learn's diabetes dataset. It compares a BMI-only simple regression model with an all-feature multiple linear regression model.
+
+### Key Results
+
+| Model | R-squared | MAE | RMSE |
+|---|---:|---:|---:|
+| BMI-only simple regression | 0.233 | 52.260 | 63.732 |
+| All-feature multiple regression | 0.453 | 42.794 | 53.853 |
+
+The multiple regression model performed better on all three test metrics.
+
+### Executed Custom Notebook
+
+[View the fully executed custom regression notebook](notebooks/ml_04_abdellah.ipynb)
+
+### Run the Custom Notebook
+
+```powershell
+uv run jupyter nbconvert --execute --to notebook --inplace notebooks/ml_04_abdellah.ipynb
 ## Notes
 
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.

@@ -119,3 +119,55 @@ dtype: int64
 2026-07-23 21:04:25 | INFO | M04 | Feature:  flipper_length_mm  ->  Target: body_mass_g  (regression)
 2026-07-23 21:04:25 | INFO | M04 | Line:     body_mass_g = 48.8297 * flipper_length_mm + -5614.07
 2026-07-23 21:04:25 | INFO | M04 | ========================
+2026-07-25 22:46:11,994 | INFO | M04_ABDELLAH | === CUSTOM REGRESSION PROJECT START ===
+2026-07-25 22:46:11,996 | INFO | M04_ABDELLAH | project_root=C:\Repos\ml-04-regression
+2026-07-25 22:46:11,998 | INFO | M04_ABDELLAH | python=3.14.2
+2026-07-25 22:46:12,003 | INFO | M04_ABDELLAH | pandas=3.0.5
+2026-07-25 22:46:12,006 | INFO | M04_ABDELLAH | numpy=2.5.1
+2026-07-25 22:46:12,010 | INFO | M04_ABDELLAH | scikit-learn=1.9.0
+2026-07-25 22:46:12,013 | INFO | M04_ABDELLAH | seaborn=0.13.2
+2026-07-25 22:46:12,023 | INFO | M04_ABDELLAH | matplotlib=3.11.1
+2026-07-25 22:46:12,149 | INFO | M04_ABDELLAH | Saved reproducible raw-data copy: C:\Repos\ml-04-regression\data\raw\diabetes_regression.csv
+2026-07-25 22:46:12,151 | INFO | M04_ABDELLAH | Dataset: sklearn_diabetes
+2026-07-25 22:46:12,153 | INFO | M04_ABDELLAH | Loaded: 442 rows, 11 columns
+2026-07-25 22:46:12,155 | INFO | M04_ABDELLAH | Features: ['age', 'sex', 'bmi', 'bp', 's1', 's2', 's3', 's4', 's5', 's6']
+2026-07-25 22:46:12,157 | INFO | M04_ABDELLAH | Target: disease_progression
+2026-07-25 22:46:12,159 | INFO | M04_ABDELLAH | Missing values: 0
+2026-07-25 22:46:12,169 | INFO | M04_ABDELLAH | Duplicate rows: 0
+2026-07-25 22:46:12,956 | INFO | M04_ABDELLAH | Saved chart: C:\Repos\ml-04-regression\docs\images\phase5_bmi_vs_progression.png
+2026-07-25 22:46:13,201 | INFO | M04_ABDELLAH | Training rows: 353
+2026-07-25 22:46:13,203 | INFO | M04_ABDELLAH | Testing rows: 89
+2026-07-25 22:46:13,234 | INFO | M04_ABDELLAH | SIMPLE LINEAR REGRESSION
+2026-07-25 22:46:13,236 | INFO | M04_ABDELLAH | Equation: disease_progression = 998.5777 * bmi + 152.0034
+2026-07-25 22:46:13,237 | INFO | M04_ABDELLAH | R-squared: 0.2334
+2026-07-25 22:46:13,239 | INFO | M04_ABDELLAH | MAE: 52.260
+2026-07-25 22:46:13,241 | INFO | M04_ABDELLAH | RMSE: 63.732
+2026-07-25 22:46:13,949 | INFO | M04_ABDELLAH | Saved chart: C:\Repos\ml-04-regression\docs\images\phase5_simple_residuals.png
+2026-07-25 22:46:14,860 | INFO | M04_ABDELLAH | Saved chart: C:\Repos\ml-04-regression\docs\images\phase5_simple_actual_vs_predicted.png
+2026-07-25 22:46:15,159 | DEBUG | M04_ABDELLAH | degree= 1 train_RMSE=62.082 test_RMSE=63.732
+2026-07-25 22:46:15,161 | DEBUG | M04_ABDELLAH | degree= 2 train_RMSE=62.043 test_RMSE=63.914
+2026-07-25 22:46:15,164 | DEBUG | M04_ABDELLAH | degree= 3 train_RMSE=62.036 test_RMSE=63.753
+2026-07-25 22:46:15,167 | DEBUG | M04_ABDELLAH | degree= 4 train_RMSE=61.896 test_RMSE=65.009
+2026-07-25 22:46:15,169 | DEBUG | M04_ABDELLAH | degree= 5 train_RMSE=61.837 test_RMSE=63.921
+2026-07-25 22:46:15,171 | DEBUG | M04_ABDELLAH | degree= 6 train_RMSE=61.768 test_RMSE=63.084
+2026-07-25 22:46:15,173 | DEBUG | M04_ABDELLAH | degree= 7 train_RMSE=61.675 test_RMSE=64.754
+2026-07-25 22:46:15,176 | DEBUG | M04_ABDELLAH | degree= 8 train_RMSE=61.116 test_RMSE=88.743
+2026-07-25 22:46:15,195 | INFO | M04_ABDELLAH | Lowest polynomial test RMSE: degree=6, RMSE=63.084
+2026-07-25 22:46:15,688 | INFO | M04_ABDELLAH | Saved chart: C:\Repos\ml-04-regression\docs\images\phase5_polynomial_complexity.png
+2026-07-25 22:46:15,893 | INFO | M04_ABDELLAH | MULTIPLE LINEAR REGRESSION
+2026-07-25 22:46:15,896 | INFO | M04_ABDELLAH | R-squared: 0.4526
+2026-07-25 22:46:15,899 | INFO | M04_ABDELLAH | MAE: 42.794
+2026-07-25 22:46:15,901 | INFO | M04_ABDELLAH | RMSE: 53.853
+2026-07-25 22:46:16,384 | INFO | M04_ABDELLAH | Saved chart: C:\Repos\ml-04-regression\docs\images\phase5_multiple_actual_vs_predicted.png
+2026-07-25 22:46:16,960 | INFO | M04_ABDELLAH | Saved chart: C:\Repos\ml-04-regression\docs\images\phase5_multiple_coefficients.png
+2026-07-25 22:46:17,157 | INFO | M04_ABDELLAH | ========================
+2026-07-25 22:46:17,159 | INFO | M04_ABDELLAH | CUSTOM PROJECT SUMMARY
+2026-07-25 22:46:17,160 | INFO | M04_ABDELLAH | ========================
+2026-07-25 22:46:17,161 | INFO | M04_ABDELLAH | Dataset: sklearn_diabetes
+2026-07-25 22:46:17,162 | INFO | M04_ABDELLAH | Simple model: bmi -> disease_progression
+2026-07-25 22:46:17,164 | INFO | M04_ABDELLAH | Simple metrics: R2=0.2334, MAE=52.260, RMSE=63.732
+2026-07-25 22:46:17,166 | INFO | M04_ABDELLAH | Multiple metrics: R2=0.4526, MAE=42.794, RMSE=53.853
+2026-07-25 22:46:17,167 | INFO | M04_ABDELLAH | Best polynomial test degree: 6
+2026-07-25 22:46:17,168 | INFO | M04_ABDELLAH | Charts saved in: C:\Repos\ml-04-regression\docs\images
+2026-07-25 22:46:17,169 | INFO | M04_ABDELLAH | Executed successfully!
+2026-07-25 22:46:17,170 | INFO | M04_ABDELLAH | ========================
